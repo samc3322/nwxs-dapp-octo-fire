@@ -9,7 +9,7 @@ contract NwxsNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("NwxsNFT", "Nicheworx NFT") {}
+    constructor() ERC721("NwxsNFT", "NWXSNFT") {}
 
     function mintNFT(address recipient, string memory tokenURI) external onlyOwner  {
         _tokenIds.increment();

@@ -18,6 +18,10 @@ module.exports = {
         url: VITE_ALCHEMY_API_URL,
         accounts: [VITE_PRIVATE_KEY],
     },
+    ethereum: {
+      url: "...",
+      accounts: ["..."],
+    }
   },
   etherscan: {
       apiKey: VITE_ETHERSCAN_API_KEY
