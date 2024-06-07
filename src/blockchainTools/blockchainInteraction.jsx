@@ -1,6 +1,6 @@
 import { ethers } from "ethers"
 import { pinJSONToIPFS } from "./pinata"
-import contractJson from "../MyNFT.json"
+import contractJson from "../NwxsNFT.json"
 
 const { VITE_CONTRACT_ADDRESS, VITE_CONTRACT_ADDRESS_LOCAL, VITE_PRIVATE_KEY } = import.meta.env
 

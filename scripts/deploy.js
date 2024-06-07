@@ -1,20 +1,20 @@
 const fs = require("fs")
 
 async function main() {
-    const MyNFTFactory = await ethers.getContractFactory("MyNFT")
-    const myNFT = await MyNFTFactory.deploy()
+    const NwxsNFTFactory = await ethers.getContractFactory("NwxsNFT")
+    const NwxsNFT = await NwxsNFTFactory.deploy()
 
-    await myNFT.deployed()
+    await NwxsNFT.deployed()
 
-    console.log("myNFT deployed to:", myNFT.address)
+    console.log("NwxsNFT deployed to:", NwxsNFT.address)
 
     const data = {
-        address: myNFT.address,
-        abi: JSON.parse(myNFT.interface.format("json")),
+        address: NwxsNFT.address,
+        abi: JSON.parse(NwxsNFT.interface.format("json")),
     }
 
-    //writes the ABI and address to the MyNFT.json
-    fs.writeFileSync("./src/MyNFT.json", JSON.stringify(data))
+    //writes the ABI and address to the NwxsNFT.json
+    fs.writeFileSync("./src/NwxsNFT.json", JSON.stringify(data))
 }
 
 main()

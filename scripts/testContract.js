@@ -1,7 +1,7 @@
 async function testContract() {
     let account2Address = "0x46f98920c5896eff11bb90d784d6d6001d74c073"
 
-    let contract = await ethers.getContractAt("MyNFT", "0xd79bbc24875735C43eA1f32519Dd09281260a3AD")
+    let contract = await ethers.getContractAt("NwxsNFT", "0xd79bbc24875735C43eA1f32519Dd09281260a3AD")
 
     // call a read-only function
     console.log("The owner of token with Id 1: ", await contract.ownerOf(1))

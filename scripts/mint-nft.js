@@ -12,11 +12,11 @@ async function main() {
 
     if (currentNetwork.chainId.toString().includes(1337)) {
         console.log("We are using a local network!")
-        contract = await ethers.getContractAt("MyNFT", VITE_CONTRACT_ADDRESS_LOCAL)
+        contract = await ethers.getContractAt("NwxsNFT", VITE_CONTRACT_ADDRESS_LOCAL)
         ;[signer, signer2] = await ethers.getSigners()
     } else {
         console.log("We are using a remote network!")
-        contract = await ethers.getContractAt("MyNFT", VITE_CONTRACT_ADDRESS)
+        contract = await ethers.getContractAt("NwxsNFT", VITE_CONTRACT_ADDRESS)
         ;[signer] = await ethers.getSigners()
         //we could also use the following:
         //signer = new ethers.Wallet(VITE_PRIVATE_KEY, provider)
