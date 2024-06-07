@@ -23,3 +23,7 @@ yarn-error.log*
 
 zzz.js
 packageFromReact.json
+
+# custom
+*.code-workspace
+dist/
