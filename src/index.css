@@ -9,8 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
     font-size: 16px;
+    background-color: #f1f1f1;
 }
 
 code {
@@ -61,7 +61,7 @@ input:focus {
 }
 
 #status {
-    color: #020574;
+    color: #01579B;
     font-size: 14px;
     font-weight: 600;
 }
@@ -69,7 +69,7 @@ input:focus {
 button {
     padding: 9px 16px;
     max-height: 40px;
-    border-color: #020574;
+    border-color: #01579B;
     border-radius: 8px;
     align-items: center;
     font-size: 16px;
@@ -99,13 +99,13 @@ button:hover {
     float: right;
     margin-bottom: 50px;
     line-height: 16px;
-    background-color: #020574;
+    background-color: #01579B;
     color: white;
 }
 
 #mintButton {
     margin-top: 40px;
-    background-color: #020574;
+    background-color: #01579B;
     color: white;
 }
 
@@ -119,10 +119,10 @@ h2 {
 h1 {
     float: left;
     margin-top: 0px;
-    color: #020574;
+    color: #01579B;
     font-weight: 500;
 }
 
 a {
-    color: #020574;
+    color: #01579B;
 }
