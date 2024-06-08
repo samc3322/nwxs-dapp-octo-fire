@@ -59,7 +59,7 @@ const NFTDAPP = () => {
 
     return (
         <div id="container">
-            <h1>NFT DAPP</h1>
+            <h1>Mintify DApp</h1>
             <button id="walletButton" onClick={connectWalletPressed}>
                 {walletAddress.length > 0 ? (
                     "Connected: " +
